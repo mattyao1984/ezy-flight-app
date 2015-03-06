@@ -1,0 +1,16 @@
+{
+	"version": "1.0.0",
+	"base_url": "https://api.parse.com/1/classes",
+	"login_url": "https://api.parse.com/1/login?",
+	"settings": {
+		"staging":{
+			"header":{
+		    "X-Parse-Application-Id": "1qX71wYWZi1K4x1XtzPTyHpDJdKu6ZGUfEpFlkNO",
+		    "X-Parse-REST-API-Key": "TijyV3VVNQJj7pVmXq7rYQ9le6CLxiWYvXXlw2b9"
+		  }
+		},
+		"production":{
+			
+		}
+	}
+}

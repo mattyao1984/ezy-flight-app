@@ -1,0 +1,49 @@
+form
+	width: 100%
+	margin-top: 50px
+
+	*
+		outline: none
+
+	input[type="text"],
+	input[type="password"]
+		-webkit-appearance: none
+		-moz-appearance: none
+		-o-appearance: none
+		-ms-appearance: none
+		appearance: none
+		display: block
+		margin: 0 auto
+		font-size: $form-text-size
+		background: #eeeeee
+		background-image: none
+		border-radius: 2px
+		height: 60px
+		line-height: 60px
+		padding: 5px 10px 5px 60px
+		color: $form-input-color
+		border: 1px solid #ddd
+		font-weight: 800
+		@include my-transition(border-color, ease-in-out, .15s)
+		@include my-transition(box-shadow, ease-in-out, .15s)
+
+	.text-wrap
+		position: relative
+		height: 60px
+		display: block
+		margin-bottom: 30px
+
+		i
+			position: absolute
+			font-size: 27px
+			color: #cccccc
+			top: 15px
+			left: 20px
+
+	button
+		text-transform: uppercase
+		width: 100%
+		height: 40px
+		line-height: 40px
+		font-weight: bold !important
+		letter-spacing: 1.15px

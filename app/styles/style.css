@@ -1,0 +1,167 @@
+/* Global */
+/* Form */
+/* line 1, ../sass/_animations.sass */
+.pageFade.ng-enter,
+.pageFade.ng-leave {
+  -webkit-transition: all, 0.5s, linear;
+  -moz-transition: all, 0.5s, linear;
+  -ms-transition: all, 0.5s, linear;
+  -o-transition: all, 0.5s, linear;
+  transition: all, 0.5s, linear;
+}
+
+/* line 5, ../sass/_animations.sass */
+.pageFade.ng-enter {
+  opacity: 0;
+}
+
+/* line 8, ../sass/_animations.sass */
+.pageFade.ng-enter-active {
+  opacity: 1;
+}
+
+/* line 11, ../sass/_animations.sass */
+.pageFade.ng-leave {
+  opacity: 1;
+}
+
+/* line 14, ../sass/_animations.sass */
+.pageFade.ng-leave-active {
+  opacity: 0;
+}
+
+/* line 1, ../sass/_form.sass */
+form {
+  width: 100%;
+  margin-top: 50px;
+}
+/* line 5, ../sass/_form.sass */
+form * {
+  outline: none;
+}
+/* line 8, ../sass/_form.sass */
+form input[type="text"],
+form input[type="password"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  display: block;
+  margin: 0 auto;
+  font-size: 14px;
+  background: #eeeeee;
+  background-image: none;
+  border-radius: 2px;
+  height: 60px;
+  line-height: 60px;
+  padding: 5px 10px 5px 60px;
+  color: #686868;
+  border: 1px solid #ddd;
+  font-weight: 800;
+  -webkit-transition: border-color, ease-in-out, 0.15s;
+  -moz-transition: border-color, ease-in-out, 0.15s;
+  -ms-transition: border-color, ease-in-out, 0.15s;
+  -o-transition: border-color, ease-in-out, 0.15s;
+  transition: border-color, ease-in-out, 0.15s;
+  -webkit-transition: box-shadow, ease-in-out, 0.15s;
+  -moz-transition: box-shadow, ease-in-out, 0.15s;
+  -ms-transition: box-shadow, ease-in-out, 0.15s;
+  -o-transition: box-shadow, ease-in-out, 0.15s;
+  transition: box-shadow, ease-in-out, 0.15s;
+}
+/* line 30, ../sass/_form.sass */
+form .text-wrap {
+  position: relative;
+  height: 60px;
+  display: block;
+  margin-bottom: 30px;
+}
+/* line 36, ../sass/_form.sass */
+form .text-wrap i {
+  position: absolute;
+  font-size: 27px;
+  color: #cccccc;
+  top: 15px;
+  left: 20px;
+}
+/* line 43, ../sass/_form.sass */
+form button {
+  text-transform: uppercase;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  font-weight: bold !important;
+  letter-spacing: 1.15px;
+}
+
+/* General */
+/* line 2, ../sass/_global.sass */
+* {
+  outline: none;
+}
+
+/* line 5, ../sass/_global.sass */
+html, body {
+  width: 100%;
+  height: 100%;
+  background: #edecec;
+  display: block;
+  font-family: "Open Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+/* line 13, ../sass/_global.sass */
+html .error, body .error {
+  color: #d50000;
+}
+/* line 16, ../sass/_global.sass */
+html .error.login-error, body .error.login-error {
+  text-align: left;
+  margin-top: 10px;
+  font-size: 12px;
+}
+/* line 21, ../sass/_global.sass */
+html .container, body .container {
+  width: 940px;
+  margin: 0 auto;
+  position: relative;
+}
+/* line 27, ../sass/_global.sass */
+html .page img, body .page img {
+  width: 100%;
+}
+/* line 30, ../sass/_global.sass */
+html .page .loader-wrap, body .page .loader-wrap {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.8);
+}
+/* line 39, ../sass/_global.sass */
+html .page .loader-wrap img, body .page .loader-wrap img {
+  width: 100px;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+/* line 50, ../sass/_global.sass */
+html .page.home .login-form, body .page.home .login-form {
+  height: 548px;
+  background: #ffffff;
+  width: 100%;
+  display: block;
+  box-shadow: 0 2px 5px 1px #999;
+  position: relative;
+  text-align: center;
+  padding: 50px 65px 65px 65px;
+  margin: 50px auto;
+}
+
+/*# sourceMappingURL=style.css.map */

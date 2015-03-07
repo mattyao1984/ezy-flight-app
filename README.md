@@ -34,4 +34,5 @@ For more information about Parse, please check here: https://parse.com/
 - Added data loader feature for booking data init. It can also be trigger by clicking 'Sync' button. The loader assets is from: http://preloaders.net/en/letters_numbers_words
 - Added date/time picker when adding new bookings. The source code is from: http://amsul.ca/pickadate.js/date/
 - Added page protection feature. You need to login first and check your bookings.
+- Site is responsive. But not pixel-perfect.
 

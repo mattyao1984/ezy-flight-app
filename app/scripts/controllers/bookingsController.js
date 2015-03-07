@@ -54,7 +54,12 @@ angular.module('controllers')
 			dataService.postAddFlight(data).then(function(res){
 				$scope.showModal = false;
 				$scope.submitted = false;
-				console.log(res);
+
+				var newId = res.data.objectId;
+				$scope.booking = $.extend($scope.booking, {
+					objectId: newId
+				});
+
 				$scope.allBookings.push($scope.booking); //Update allBookings list
 			});
 		}

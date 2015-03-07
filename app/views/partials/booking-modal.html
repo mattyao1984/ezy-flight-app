@@ -1,0 +1,65 @@
+<div class="modal modalIn" ng-show="showModal">
+	<form class="booking-form">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="form-group">
+		      <div class="text-wrap">
+		        <input type="text" class="form-control modal-input" placeholder="Source" ng-model="booking.source" autofocus>
+		      </div>
+		    </div>
+		  </div>
+	  </div>
+
+    <div class="row">
+			<div class="col-xs-12">
+				<div class="form-group">
+		      <div class="text-wrap">
+		        <input type="text" class="form-control modal-input" placeholder="Destination" ng-model="booking.destination">
+		      </div>
+		    </div>
+		  </div>
+	  </div>
+
+	  <div class="row">
+			<div class="col-xs-6">
+				<div class="form-group">
+		      <div class="text-wrap">
+		        <input type="text" class="form-control modal-input" pick-a-date="date" placeholder="Date" ng-model="booking.date">
+		      </div>
+		    </div>
+		  </div>
+
+		  <div class="col-xs-6">
+				<div class="form-group">
+		      <div class="text-wrap">
+		        <input type="text" class="form-control modal-input" pick-a-time="time" placeholder="Time" ng-model="booking.time">
+		      </div>
+		    </div>
+		  </div>
+	  </div>
+
+	  <div class="row">
+			<div class="col-xs-6">
+				<div class="form-group">
+		      <div class="text-wrap">
+		        <input type="text" class="form-control modal-input" placeholder="Capacity" ng-model="booking.capacity">
+		      </div>
+		    </div>
+		  </div>
+	  </div>
+
+	  <div class="row">
+	  	<div class="col-xs-4 col-xs-offset-4">
+	  		<div class="form-group">
+	  			<button class="btn btn-primary" ng-click="cancelBooking()">Cancel</button>
+	  		</div>
+	  	</div>
+
+	  	<div class="col-xs-4">
+	  		<div class="form-group">
+	  			<button class="btn btn-primary" ng-click="saveBooking()">Save</button>
+	  		</div>
+	  	</div>
+	  </div>
+	</form>
+</div>

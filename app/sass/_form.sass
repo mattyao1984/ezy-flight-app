@@ -27,6 +27,19 @@ form
 		@include my-transition(border-color, ease-in-out, .15s)
 		@include my-transition(box-shadow, ease-in-out, .15s)
 
+		&.modal-input
+			border: none
+			background: transparent
+			border-bottom: 2px solid #ddd
+			padding: 5px 0
+			height: 50px
+			line-height: 50px
+			color: #333
+			box-shadow: none
+
+			&:focus
+				border-bottom: 2px solid $main-color
+
 	.text-wrap
 		position: relative
 		height: 60px
@@ -47,3 +60,21 @@ form
 		line-height: 40px
 		font-weight: bold !important
 		letter-spacing: 1.15px
+
+.round-btn
+	width: 64px
+	height: 64px
+	display: block
+	background: $main-color
+	text-align: center
+	border-radius: 50%
+	cursor: pointer
+
+	&:hover,
+	&:active
+		background: $hover-color
+
+	i
+		font-size: 25px
+		line-height: 64px
+		color: #ffffff

@@ -17,7 +17,8 @@ angular
     'ngSanitize',
     'controllers',
     'directives',
-    'services'
+    'services',
+    'angular-datepicker'
   ])
   .config(function ($routeProvider) {
     $routeProvider

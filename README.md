@@ -20,6 +20,10 @@ To see how it works, please check this [Demo Link](http://ezy-flight-app.herokua
 - You can view all your bookings once you have login
 - You can remove the booking 
 
+### How to test? ###
+This app is tested with Karma which makes the test process eaiser than ever before.
+Just run 'grunt test --repoters' to test the app. Test result can be view under '/test/units.html'.
+
 ### About the toolset and enviroment ###
 - Yeoman
 This project is initialized with Yeoman Angular generator which can be found here: https://github.com/yeoman/generator-angular. Yeoman is a the web's scaffolding tool for modern web apps. It integrates Bower, Grunt and other useful tools for quick start. For more information about Yeoman, please check: http://yeoman.io/

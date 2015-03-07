@@ -38,25 +38,6 @@ html, body
 		margin: 0 auto
 		position: relative
 
-	.loader-wrap
-		position: absolute
-		bottom: 0
-		top: 0
-		left: 0
-		right: 0
-		margin: auto
-		background: rgba(255,255,255,0.8)
-
-		img
-			width: 100px
-			height: auto
-			position: absolute
-			top: 0
-			left: 0
-			right: 0
-			bottom: 0
-			margin: auto
-
 	.loader
 		text-align: center
 		height: 80px
@@ -71,6 +52,7 @@ html, body
 			background: $main-color
 			position: fixed
 			width: 100%
+			z-index: 2
 
 			#refresh-btn
 				color: #ffffff
@@ -104,7 +86,6 @@ html, body
 
 		&.home
 			.login-form
-				height: 548px
 				background: #ffffff
 				width: 100%
 				display: block
@@ -113,6 +94,25 @@ html, body
 				text-align: center
 				padding: 50px 65px 65px 65px
 				margin: 50px auto
+
+			.loader-wrap
+				position: absolute
+				bottom: 0
+				top: 0
+				left: 0
+				right: 0
+				margin: auto
+				background: rgba(255,255,255,0.8)
+
+				img
+					width: 100px
+					height: auto
+					position: absolute
+					top: 0
+					left: 0
+					right: 0
+					bottom: 0
+					margin: auto
 
 		&.bookings
 			position: relative

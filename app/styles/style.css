@@ -196,44 +196,24 @@ html .container, body .container {
   position: relative;
 }
 /* line 41, ../sass/_global.sass */
-html .loader-wrap, body .loader-wrap {
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  background: rgba(255, 255, 255, 0.8);
-}
-/* line 50, ../sass/_global.sass */
-html .loader-wrap img, body .loader-wrap img {
-  width: 100px;
-  height: auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-}
-/* line 60, ../sass/_global.sass */
 html .loader, body .loader {
   text-align: center;
   height: 80px;
   line-height: 80px;
 }
-/* line 65, ../sass/_global.sass */
+/* line 46, ../sass/_global.sass */
 html .loader img, body .loader img {
   width: 200px !important;
 }
-/* line 69, ../sass/_global.sass */
+/* line 50, ../sass/_global.sass */
 html .page header, body .page header {
   height: 50px;
   background: #007cc4;
   position: fixed;
   width: 100%;
+  z-index: 2;
 }
-/* line 75, ../sass/_global.sass */
+/* line 57, ../sass/_global.sass */
 html .page header #refresh-btn, body .page header #refresh-btn {
   color: #ffffff;
   font-size: 30px;
@@ -241,11 +221,11 @@ html .page header #refresh-btn, body .page header #refresh-btn {
   margin-right: 17px;
   cursor: pointer;
 }
-/* line 82, ../sass/_global.sass */
+/* line 64, ../sass/_global.sass */
 html .page header #refresh-btn:hover, body .page header #refresh-btn:hover {
   color: #ccc;
 }
-/* line 85, ../sass/_global.sass */
+/* line 67, ../sass/_global.sass */
 html .page header #logout-btn, body .page header #logout-btn {
   color: #ffffff;
   font-size: 30px;
@@ -253,11 +233,11 @@ html .page header #logout-btn, body .page header #logout-btn {
   margin-left: 17px;
   cursor: pointer;
 }
-/* line 92, ../sass/_global.sass */
+/* line 74, ../sass/_global.sass */
 html .page header #logout-btn:hover, body .page header #logout-btn:hover {
   color: #ccc;
 }
-/* line 95, ../sass/_global.sass */
+/* line 77, ../sass/_global.sass */
 html .page header h3, body .page header h3 {
   color: #ffffff;
   margin-left: 17px;
@@ -265,13 +245,12 @@ html .page header h3, body .page header h3 {
   line-height: 50px;
   font-weight: bold;
 }
-/* line 102, ../sass/_global.sass */
+/* line 84, ../sass/_global.sass */
 html .page img, body .page img {
   width: 100%;
 }
-/* line 106, ../sass/_global.sass */
+/* line 88, ../sass/_global.sass */
 html .page.home .login-form, body .page.home .login-form {
-  height: 548px;
   background: #ffffff;
   width: 100%;
   display: block;
@@ -280,6 +259,27 @@ html .page.home .login-form, body .page.home .login-form {
   text-align: center;
   padding: 50px 65px 65px 65px;
   margin: 50px auto;
+}
+/* line 98, ../sass/_global.sass */
+html .page.home .loader-wrap, body .page.home .loader-wrap {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.8);
+}
+/* line 107, ../sass/_global.sass */
+html .page.home .loader-wrap img, body .page.home .loader-wrap img {
+  width: 100px;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
 }
 /* line 117, ../sass/_global.sass */
 html .page.bookings, body .page.bookings {
@@ -400,6 +400,33 @@ html .page.bookings .modal form, body .page.bookings .modal form {
   left: 0;
   bottom: 0;
   margin: auto;
+}
+
+@media (max-width: 768px) {
+  /* line 2, ../sass/_mobile.sass */
+  html, body {
+    overflow-x: hidden;
+  }
+  /* line 6, ../sass/_mobile.sass */
+  html .page .container, body .page .container {
+    width: 100%;
+  }
+  /* line 10, ../sass/_mobile.sass */
+  html .page.bookings .container, body .page.bookings .container {
+    padding: 70px 17px;
+  }
+  /* line 16, ../sass/_mobile.sass */
+  html .page.bookings table thead tr th, body .page.bookings table thead tr th {
+    font-size: 11px;
+  }
+  /* line 21, ../sass/_mobile.sass */
+  html .page.bookings table tbody tr td, body .page.bookings table tbody tr td {
+    font-size: 10px;
+  }
+  /* line 25, ../sass/_mobile.sass */
+  html .page.bookings .modal form, body .page.bookings .modal form {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -66,6 +66,27 @@ angular.module('services', [])
       return promise;
     },
 
+    putEditFlight: function(bookingJSON, objectId){
+      var PARSE_HEADER = {
+          'Content-Type': 'application/json'
+      };
+
+      PARSE_HEADER = $.extend(PARSE_HEADER, this.myConfig.settings[env].header);
+
+      var req = {
+          method: 'PUT',
+          headers: PARSE_HEADER,
+          url: this.myConfig.base_url + '/Bookings/' + objectId,
+          data: bookingJSON
+      };
+
+      var promise = $http(req).success(function(data, status, headers, config) {
+          return data;
+      });
+
+      return promise;
+    },
+
     deleteBooking: function(objectId){
     	var PARSE_HEADER = {
           'Content-Type': 'application/json'

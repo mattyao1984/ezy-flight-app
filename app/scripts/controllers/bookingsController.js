@@ -27,7 +27,8 @@ angular.module('controllers')
 	};
 
 	$scope.logout = function(){
-
+		localStorage.setItem('isLoggedIn' ,false);
+		$location.path('/');
 	};
 
 	$scope.setFormScope= function(scope){

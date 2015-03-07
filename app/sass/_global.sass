@@ -166,34 +166,41 @@ html, body
 									&:hover
 										background: #edecec
 
-								.remove-btn
-									display: none
-									width: 130px
-									height: 40px
-									line-height: 40px
+								ul.booking-btns
+									display: none !important
+									width: 170px
+									display: block
 									position: absolute
-									bottom: -30px
-									left: -80px
+									left: -160px
+									bottom: -70px
 									z-index: 9
-									background: #ffffff
-									border: 1px solid #ddd
-									overflow: hidden
-									font-size: 16px
-									text-align: right
-									padding-right: 15px
-									background: rgba(200,200,200,0.9)
-									cursor: pointer
 
 									&.show
-										display: block	
+										display: block !important
 
-									&:hover
-										background: rgba(220,220,220,0.9)
+									li
+										height: 40px
+										list-style: none
 
-									i
-										line-height: 40px
-										margin-left: 15px
-										font-size: 20px
+										.booking-btn
+											height: 40px
+											line-height: 40px	
+											background: #ffffff
+											border: 1px solid #ddd
+											overflow: hidden
+											font-size: 16px
+											text-align: left						
+											background: rgba(200,200,200,0.9)
+											cursor: pointer						
+
+											&:hover
+												background: rgba(220,220,220,0.9)
+
+											i
+												line-height: 40px
+												margin-left: 15px
+												margin-right: 15px
+												font-size: 20px
 
 			.modal
 				position: fixed

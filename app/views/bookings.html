@@ -30,8 +30,15 @@
   						<td>{{ booking.time }}</td>
   						<td>{{ booking.capacity }}</td>
   						<td class="remove-wrap">
-  							<a class="remove-toggle" remove-toggle><i class="fa fa-ellipsis-v"></i></a>
-  							<div class="remove-btn" ng-click="removeBooking(booking.objectId)"><i class="fa fa-trash-o pull-left"></i> Remove</div>
+                <a class="remove-toggle" remove-toggle><i class="fa fa-ellipsis-v"></i></a>
+                <ul class="booking-btns">
+                  <li>
+                    <div class="booking-btn edit-btn" ng-click="editFlight(booking.objectId)"><i class="fa fa-pencil-square-o pull-left"></i> Edit</div>
+                  </li>
+                  <li>
+      							<div class="booking-btn remove-btn" ng-click="removeBooking(booking.objectId)"><i class="fa fa-trash-o pull-left"></i> Remove</div>
+                  </li>
+                </ul>
   						</td>
   					</tr>
   				<tbody>
@@ -40,7 +47,7 @@
   	</div>
 
     <div class="row" ng-show="dataReady">
-      <div class="col-xs-3">
+      <div class="col-sm-3">
         <div class="select-wrap">
           <select name="sort-by" ng-model="filter" ng-change="sortBookings()">
               <option disabled selected value="all">SORT BY:</option>
@@ -52,7 +59,7 @@
         </div>
       </div>
 
-      <div class="col-xs-6 col-xs-offset-3">
+      <div class="col-sm-6 col-sm-offset-3">
         <input type="text" class="normal-input pull-right" ng-model="seachBooking" placeholder="Search Bookings..." />
       </div>
     </div>

@@ -22,6 +22,13 @@ angular.module('controllers')
 		$scope.booking = {};
 	};
 
+	$scope.editFlight = function(objectId){
+		$scope.showModal = true;
+		$scope.booking = _.find($scope.allBookings, function(b){
+			return b.objectId === objectId;
+		});
+	};
+
 	$scope.cancelBooking = function(){
 		$scope.showModal = false;
 		$scope.submitted = false;
@@ -46,25 +53,45 @@ angular.module('controllers')
 
 	$scope.saveBooking = function(){
 		$scope.booking.capacity = parseInt($scope.booking.capacity);
-		var data = $.extend($scope.booking, {
-			userId: $scope.userId
-		});
 
-		$scope.submitted = true;
+		if($scope.booking.hasOwnProperty('objectId')){
+			$scope.submitted = true;
+			var data = {
+				source: $scope.booking.source,
+				destination: $scope.booking.destination,
+				date: $scope.booking.date,
+				time: $scope.booking.time,
+				capacity: $scope.booking.capacity
+			};
 
-		if($scope.bookingForm.bookingForm.$invalid == false && $scope.validCapacity()){
-			dataService.postAddFlight(data).then(function(res){
-				$scope.showModal = false;
-				$scope.submitted = false;
-
-				var newId = res.data.objectId;
-				$scope.booking = $.extend($scope.booking, {
-					objectId: newId
+			if($scope.bookingForm.bookingForm.$invalid == false && $scope.validCapacity()){
+				dataService.putEditFlight(data, $scope.booking.objectId).then(function(res){
+					$scope.showModal = false;
+					$scope.submitted = false;
+					$scope.sortBookings();
 				});
-
-				$scope.allBookings.push($scope.booking); //Update allBookings list
-				$scope.sortBookings();
+			}
+		}else{
+			var data = $.extend($scope.booking, {
+				userId: $scope.userId
 			});
+
+			$scope.submitted = true;
+
+			if($scope.bookingForm.bookingForm.$invalid == false && $scope.validCapacity()){
+				dataService.postAddFlight(data).then(function(res){
+					$scope.showModal = false;
+					$scope.submitted = false;
+
+					var newId = res.data.objectId;
+					$scope.booking = $.extend($scope.booking, {
+						objectId: newId
+					});
+
+					$scope.allBookings.push($scope.booking); //Update allBookings list
+					$scope.sortBookings();
+				});
+			}
 		}
 	};
 

@@ -6,6 +6,9 @@ angular.module('controllers')
 	$scope.showModal = false;
 	$scope.dataReady = false;
 	$scope.allBookings = [];
+	$scope.bookingForm = {};
+
+	$scope.submitted = false;
 
 	//Get and set config settings 
 	dataService.getServerConfig().then(function(server_res){
@@ -20,11 +23,16 @@ angular.module('controllers')
 
 	$scope.cancelBooking = function(){
 		$scope.showModal = false;
+		$scope.submitted = false;
 	};
 
 	$scope.logout = function(){
 
 	};
+
+	$scope.setFormScope= function(scope){
+    $scope.bookingForm = scope;
+	}
 
 	$scope.syncData = function(){
 		$scope.dataReady = false;
@@ -40,18 +48,34 @@ angular.module('controllers')
 			userId: $scope.userId
 		});
 
-		dataService.postAddFlight(data).then(function(res){
-			$scope.showModal = false;
-			$scope.allBookings.push($scope.booking); //Update allBookings list
-		});
+		$scope.submitted = true;
+
+		if($scope.bookingForm.bookingForm.$invalid == false && $scope.validCapacity()){
+			dataService.postAddFlight(data).then(function(res){
+				$scope.showModal = false;
+				$scope.submitted = false;
+				console.log(res);
+				$scope.allBookings.push($scope.booking); //Update allBookings list
+			});
+		}
+	};
+
+	$scope.isNumeric = function(n){
+	  return !isNaN(parseFloat(n)) && isFinite(n);
+	};
+
+	$scope.validCapacity = function(){
+		if($scope.isNumeric($scope.booking.capacity)){
+			return true;
+		}else{
+			return false;
+		}
 	};
 
 	$scope.removeBooking = function(objectId){
 		var answer = confirm('Are you sure to remove this flight from the system?');
 		if(answer){
 			dataService.deleteBooking(objectId).then(function(res){
-				console.log(res);
-
 				//remove the booking from the list
 				$scope.allBookings = _.without($scope.allBookings, _.findWhere($scope.allBookings, {objectId: objectId}));
 			});

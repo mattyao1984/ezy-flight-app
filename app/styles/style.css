@@ -165,25 +165,37 @@ html, body {
 /* line 13, ../sass/_global.sass */
 html .error, body .error {
   color: #d50000;
+  font-size: 12px;
+  margin-top: 5px;
 }
-/* line 16, ../sass/_global.sass */
+/* line 18, ../sass/_global.sass */
 html .error.login-error, body .error.login-error {
   text-align: left;
   margin-top: 10px;
   font-size: 12px;
 }
-/* line 21, ../sass/_global.sass */
+/* line 23, ../sass/_global.sass */
+html .error i, body .error i {
+  font-size: 12px !important;
+  position: relative !important;
+  margin-right: 10px !important;
+  line-height: 18px !important;
+  color: #d50000 !important;
+  top: inherit;
+  left: inherit;
+}
+/* line 32, ../sass/_global.sass */
 html h3, body h3 {
   padding: 0;
   margin: 0;
 }
-/* line 25, ../sass/_global.sass */
+/* line 36, ../sass/_global.sass */
 html .container, body .container {
   width: 940px;
   margin: 0 auto;
   position: relative;
 }
-/* line 30, ../sass/_global.sass */
+/* line 41, ../sass/_global.sass */
 html .loader-wrap, body .loader-wrap {
   position: absolute;
   bottom: 0;
@@ -193,7 +205,7 @@ html .loader-wrap, body .loader-wrap {
   margin: auto;
   background: rgba(255, 255, 255, 0.8);
 }
-/* line 39, ../sass/_global.sass */
+/* line 50, ../sass/_global.sass */
 html .loader-wrap img, body .loader-wrap img {
   width: 100px;
   height: auto;
@@ -204,24 +216,24 @@ html .loader-wrap img, body .loader-wrap img {
   bottom: 0;
   margin: auto;
 }
-/* line 49, ../sass/_global.sass */
+/* line 60, ../sass/_global.sass */
 html .loader, body .loader {
   text-align: center;
   height: 80px;
   line-height: 80px;
 }
-/* line 54, ../sass/_global.sass */
+/* line 65, ../sass/_global.sass */
 html .loader img, body .loader img {
   width: 200px !important;
 }
-/* line 58, ../sass/_global.sass */
+/* line 69, ../sass/_global.sass */
 html .page header, body .page header {
   height: 50px;
   background: #007cc4;
   position: fixed;
   width: 100%;
 }
-/* line 64, ../sass/_global.sass */
+/* line 75, ../sass/_global.sass */
 html .page header #refresh-btn, body .page header #refresh-btn {
   color: #ffffff;
   font-size: 30px;
@@ -229,11 +241,11 @@ html .page header #refresh-btn, body .page header #refresh-btn {
   margin-right: 17px;
   cursor: pointer;
 }
-/* line 71, ../sass/_global.sass */
+/* line 82, ../sass/_global.sass */
 html .page header #refresh-btn:hover, body .page header #refresh-btn:hover {
   color: #ccc;
 }
-/* line 74, ../sass/_global.sass */
+/* line 85, ../sass/_global.sass */
 html .page header #logout-btn, body .page header #logout-btn {
   color: #ffffff;
   font-size: 30px;
@@ -241,11 +253,11 @@ html .page header #logout-btn, body .page header #logout-btn {
   margin-left: 17px;
   cursor: pointer;
 }
-/* line 81, ../sass/_global.sass */
+/* line 92, ../sass/_global.sass */
 html .page header #logout-btn:hover, body .page header #logout-btn:hover {
   color: #ccc;
 }
-/* line 84, ../sass/_global.sass */
+/* line 95, ../sass/_global.sass */
 html .page header h3, body .page header h3 {
   color: #ffffff;
   margin-left: 17px;
@@ -253,11 +265,11 @@ html .page header h3, body .page header h3 {
   line-height: 50px;
   font-weight: bold;
 }
-/* line 91, ../sass/_global.sass */
+/* line 102, ../sass/_global.sass */
 html .page img, body .page img {
   width: 100%;
 }
-/* line 95, ../sass/_global.sass */
+/* line 106, ../sass/_global.sass */
 html .page.home .login-form, body .page.home .login-form {
   height: 548px;
   background: #ffffff;
@@ -269,25 +281,25 @@ html .page.home .login-form, body .page.home .login-form {
   padding: 50px 65px 65px 65px;
   margin: 50px auto;
 }
-/* line 106, ../sass/_global.sass */
+/* line 117, ../sass/_global.sass */
 html .page.bookings, body .page.bookings {
   position: relative;
 }
-/* line 109, ../sass/_global.sass */
+/* line 120, ../sass/_global.sass */
 html .page.bookings .container, body .page.bookings .container {
   padding: 70px 0;
 }
-/* line 112, ../sass/_global.sass */
+/* line 123, ../sass/_global.sass */
 html .page.bookings .add-flight, body .page.bookings .add-flight {
   position: fixed;
   bottom: 30px;
   right: 17px;
 }
-/* line 117, ../sass/_global.sass */
+/* line 128, ../sass/_global.sass */
 html .page.bookings table, body .page.bookings table {
   width: 100%;
 }
-/* line 122, ../sass/_global.sass */
+/* line 133, ../sass/_global.sass */
 html .page.bookings table thead tr th, body .page.bookings table thead tr th {
   background: transparent;
   height: 60px;
@@ -295,11 +307,11 @@ html .page.bookings table thead tr th, body .page.bookings table thead tr th {
   text-align: center;
   color: #333333;
 }
-/* line 130, ../sass/_global.sass */
+/* line 141, ../sass/_global.sass */
 html .page.bookings table tbody tr, body .page.bookings table tbody tr {
   border: 1px solid #ddd;
 }
-/* line 133, ../sass/_global.sass */
+/* line 144, ../sass/_global.sass */
 html .page.bookings table tbody tr td, body .page.bookings table tbody tr td {
   background: #ffffff;
   color: #333;
@@ -309,12 +321,12 @@ html .page.bookings table tbody tr td, body .page.bookings table tbody tr td {
   height: 50px;
   line-height: 50px;
 }
-/* line 142, ../sass/_global.sass */
+/* line 153, ../sass/_global.sass */
 html .page.bookings table tbody tr td.remove-wrap, body .page.bookings table tbody tr td.remove-wrap {
   width: 50px;
   position: relative;
 }
-/* line 146, ../sass/_global.sass */
+/* line 157, ../sass/_global.sass */
 html .page.bookings table tbody tr td.remove-wrap a, body .page.bookings table tbody tr td.remove-wrap a {
   display: block;
   line-height: 50px;
@@ -324,11 +336,11 @@ html .page.bookings table tbody tr td.remove-wrap a, body .page.bookings table t
   background: #ffffff;
   cursor: pointer;
 }
-/* line 155, ../sass/_global.sass */
+/* line 166, ../sass/_global.sass */
 html .page.bookings table tbody tr td.remove-wrap a:hover, body .page.bookings table tbody tr td.remove-wrap a:hover {
   background: #edecec;
 }
-/* line 158, ../sass/_global.sass */
+/* line 169, ../sass/_global.sass */
 html .page.bookings table tbody tr td.remove-wrap .remove-btn, body .page.bookings table tbody tr td.remove-wrap .remove-btn {
   display: none;
   width: 130px;
@@ -347,21 +359,21 @@ html .page.bookings table tbody tr td.remove-wrap .remove-btn, body .page.bookin
   background: rgba(200, 200, 200, 0.9);
   cursor: pointer;
 }
-/* line 176, ../sass/_global.sass */
+/* line 187, ../sass/_global.sass */
 html .page.bookings table tbody tr td.remove-wrap .remove-btn.show, body .page.bookings table tbody tr td.remove-wrap .remove-btn.show {
   display: block;
 }
-/* line 179, ../sass/_global.sass */
+/* line 190, ../sass/_global.sass */
 html .page.bookings table tbody tr td.remove-wrap .remove-btn:hover, body .page.bookings table tbody tr td.remove-wrap .remove-btn:hover {
   background: rgba(220, 220, 220, 0.9);
 }
-/* line 182, ../sass/_global.sass */
+/* line 193, ../sass/_global.sass */
 html .page.bookings table tbody tr td.remove-wrap .remove-btn i, body .page.bookings table tbody tr td.remove-wrap .remove-btn i {
   line-height: 40px;
   margin-left: 15px;
   font-size: 20px;
 }
-/* line 187, ../sass/_global.sass */
+/* line 198, ../sass/_global.sass */
 html .page.bookings .modal, body .page.bookings .modal {
   position: fixed;
   display: block;
@@ -373,7 +385,7 @@ html .page.bookings .modal, body .page.bookings .modal {
   right: 0;
   margin: auto;
 }
-/* line 198, ../sass/_global.sass */
+/* line 209, ../sass/_global.sass */
 html .page.bookings .modal form, body .page.bookings .modal form {
   position: absolute;
   z-index: 9;

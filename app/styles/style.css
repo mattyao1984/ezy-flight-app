@@ -53,9 +53,10 @@ form {
 form * {
   outline: none;
 }
+
 /* line 8, ../sass/_form.sass */
-form input[type="text"],
-form input[type="password"] {
+input[type="text"],
+input[type="password"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   -o-appearance: none;
@@ -85,8 +86,8 @@ form input[type="password"] {
   transition: box-shadow, ease-in-out, 0.15s;
 }
 /* line 30, ../sass/_form.sass */
-form input[type="text"].modal-input,
-form input[type="password"].modal-input {
+input[type="text"].modal-input,
+input[type="password"].modal-input {
   border: none;
   background: transparent;
   border-bottom: 2px solid #ddd;
@@ -97,27 +98,38 @@ form input[type="password"].modal-input {
   box-shadow: none;
 }
 /* line 40, ../sass/_form.sass */
-form input[type="text"].modal-input:focus,
-form input[type="password"].modal-input:focus {
+input[type="text"].modal-input:focus,
+input[type="password"].modal-input:focus {
   border-bottom: 2px solid #007cc4;
 }
 /* line 43, ../sass/_form.sass */
-form .text-wrap {
+input[type="text"].normal-input,
+input[type="password"].normal-input {
+  margin-top: 20px;
+  height: 40px;
+  background: #ffffff;
+  line-height: 40px;
+  color: #333333;
+  padding: 15px;
+}
+
+/* line 51, ../sass/_form.sass */
+.text-wrap {
   position: relative;
   height: 60px;
   display: block;
   margin-bottom: 30px;
 }
-/* line 49, ../sass/_form.sass */
-form .text-wrap i {
+/* line 57, ../sass/_form.sass */
+.text-wrap i {
   position: absolute;
   font-size: 27px;
   color: #cccccc;
   top: 15px;
   left: 20px;
 }
-/* line 56, ../sass/_form.sass */
-form button {
+/* line 64, ../sass/_form.sass */
+.text-wrap button {
   text-transform: uppercase;
   width: 100%;
   height: 40px;
@@ -126,7 +138,40 @@ form button {
   letter-spacing: 1.15px;
 }
 
-/* line 64, ../sass/_form.sass */
+/* line 72, ../sass/_form.sass */
+.select-wrap {
+  height: 40px;
+  width: 100%;
+  display: block;
+  position: relative;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  background-color: #ffffff;
+  background-image: url(../images/select-arrow.png);
+  background-position: 95% 50%;
+  background-repeat: no-repeat;
+  margin-top: 20px;
+  line-height: 40px;
+}
+/* line 86, ../sass/_form.sass */
+.select-wrap select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 15px;
+  border-radius: 0;
+  color: #333;
+  font-size: 15px;
+  border: none;
+  box-shadow: none;
+  margin-bottom: 10px;
+  outline: none;
+}
+
+/* line 102, ../sass/_form.sass */
 .round-btn {
   width: 64px;
   height: 64px;
@@ -136,11 +181,11 @@ form button {
   border-radius: 50%;
   cursor: pointer;
 }
-/* line 73, ../sass/_form.sass */
+/* line 111, ../sass/_form.sass */
 .round-btn:hover, .round-btn:active {
   background: #006199;
 }
-/* line 77, ../sass/_form.sass */
+/* line 115, ../sass/_form.sass */
 .round-btn i {
   font-size: 25px;
   line-height: 64px;

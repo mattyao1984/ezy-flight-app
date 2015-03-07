@@ -23,7 +23,7 @@
   				</thead>
 
   				<tbody>
-  					<tr ng-repeat="booking in allBookings">
+  					<tr ng-repeat="booking in allBookings | filter:seachBooking">
   						<td>{{ booking.source }}</td>
   						<td>{{ booking.destination }}</td>
   						<td>{{ booking.date }}</td>
@@ -38,6 +38,23 @@
   			</table>
   		</div>
   	</div>
+
+    <div class="row" ng-show="dataReady">
+      <div class="col-xs-3">
+        <div class="select-wrap">
+          <select name="sort-by" ng-model="filter" ng-change="sortBookings()">
+              <option disabled selected value="all">SORT BY:</option>
+              <option value="Source">By Source</option>
+              <option value="Destination">By Destination</option>
+              <option value="Capacity">By Capacity</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="col-xs-6 col-xs-offset-3">
+        <input type="text" class="normal-input pull-right" ng-model="seachBooking" placeholder="Search Bookings..." />
+      </div>
+    </div>
   </div>
 
   <a class="add-flight round-btn" ng-click="addFlight()"><i class="fa fa-plus"></i></a>

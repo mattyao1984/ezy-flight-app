@@ -46,6 +46,7 @@ For more information about Parse, please check here: https://parse.com/
 - Added date/time picker when adding new bookings. The source code is from: http://amsul.ca/pickadate.js/date/
 - Added page protection feature. You need to login first and check your bookings.
 - Site is responsive. But not pixel-perfect.
+- Added search and sorting functions.
 
 ### I have some questions ###
 Please contact Matt Yao via email mattyao1984@gmail.com

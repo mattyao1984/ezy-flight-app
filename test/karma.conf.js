@@ -30,6 +30,7 @@ module.exports = function(config) {
       'bower_components/angular-sanitize/angular-sanitize.js',
       'bower_components/bootstrap/dist/js/bootstrap.js',
       'bower_components/underscore/underscore.js',
+      'bower_components/angular-native-picker/build/angular-datepicker.js',
       'bower_components/angular-mocks/angular-mocks.js',
       // endbower
       'app/scripts/**/*.js',

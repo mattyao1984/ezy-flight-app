@@ -20,9 +20,13 @@ angular.module('controllers', [])
 			$scope.dataLoading = false;
 			var user_id = res.data.objectId;
 			$location.path('/bookings/' + user_id);
+
+			localStorage.setItem('isLoggedIn' ,true);
 		}, function(error){
 			$scope.dataLoading = false;
 			$scope.errorMessage = 'Username/Password is not correct';
+
+			localStorage.setItem('isLoggedIn' ,false);
 		});
 	};
 }]);

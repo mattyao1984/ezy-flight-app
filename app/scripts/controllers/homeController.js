@@ -8,7 +8,6 @@ angular.module('controllers', [])
 
 	//Get and set config settings 
 	dataService.getServerConfig().then(function(server_res){
-		console.log(server_res);
 		dataService.setConfig(server_res.data);
 		authService.setConfig(server_res.data);
 	});

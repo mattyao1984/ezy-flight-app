@@ -1,3 +1,10 @@
+# README #
+
+Welcome to Ezy Flight App!
+
+### Demo Link ###
+To see how it works, please check this [Demo Link](http://ezy-flight-app.herokuapp.com/).
+
 ### How to install? ###
 - git clone repo: https://github.com/mattyao1984/ezy-flight-app.git 
 - Install Node.js if you don't have it. Download from here http://nodejs.org/download/
@@ -35,4 +42,9 @@ For more information about Parse, please check here: https://parse.com/
 - Added date/time picker when adding new bookings. The source code is from: http://amsul.ca/pickadate.js/date/
 - Added page protection feature. You need to login first and check your bookings.
 - Site is responsive. But not pixel-perfect.
+
+### I have some questions ###
+Please contact Matt Yao via email mattyao1984@gmail.com
+
+#### Matt Yao @ 2015.03 ####
 

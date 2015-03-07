@@ -12,15 +12,15 @@
         <td colspan="3" title="Mozilla/5.0 (Macintosh; Intel Mac OS X) AppleWebKit/534.34 (KHTML, like Gecko) PhantomJS/1.9.8 Safari/534.34">Browser: PhantomJS 1.9.8 (Mac OS X)</td>
       </tr>
       <tr class="overview">
-        <td colspan="3">Timestamp: 2015-03-07T07:23:35</td>
+        <td colspan="3">Timestamp: 2015-03-07T10:10:18</td>
       </tr>
       <tr>
         <td colspan="3">
-          6 tests / 
+          10 tests / 
           0 errors / 
           0 failures / 
           0 skipped / 
-          runtime: 0.102s
+          runtime: 0.084s
         </td>
       </tr>
       <tr class="header">
@@ -29,7 +29,7 @@
         <td>Suite / Results</td>
       </tr>
       <tr class="pass">
-        <td>Passed in 0.061s</td>
+        <td>Passed in 0.023s</td>
         <td>should init with correct values</td>
         <td>Controller: bookingsController &raquo; Initialize values</td>
       </tr>
@@ -39,85 +39,48 @@
         <td>Controller: bookingsController &raquo; when addFlight button is clicked</td>
       </tr>
       <tr class="pass">
-        <td>Passed in 0.003s</td>
+        <td>Passed in 0.002s</td>
         <td>should hide the modal</td>
         <td>Controller: bookingsController &raquo; when cancel button is clicked</td>
       </tr>
       <tr class="pass">
-        <td>Passed in 0.013s</td>
+        <td>Passed in 0.003s</td>
         <td>should return false if the value is not a number</td>
         <td>Controller: bookingsController &raquo; test isNumberic()</td>
       </tr>
       <tr class="pass">
         <td>Passed in 0.003s</td>
-        <td>should init with correct values</td>
-        <td>Controller: homeController &raquo; Initialize values</td>
+        <td>should sort by capacity</td>
+        <td>Controller: bookingsController &raquo; Testing sorting functions</td>
       </tr>
       <tr class="pass">
-        <td>Passed in 0.019s</td>
-        <td>should have no error if access is succssful</td>
-        <td>Controller: homeController &raquo; Login event</td>
-      </tr>
-    </table>
-    <hr/>
-  </body>
-  <head>
-    <meta charset="utf-8"/>
-    <title>Unit Test Results</title>
-    <style type="text/css">html,body{font-family:Arial,sans-serif;margin:0;padding:0;}body{padding:10px 40px;}table{width:100%;margin-bottom:20px;}tr.header{background:#ddd;font-weight:bold;border-bottom:none;}td{padding:7px;border-top:none;border-left:1px black solid;border-bottom:1px black solid;border-right:none;}tr.pass td{color:#003b07;background:#86e191;}tr.skip td{color:#7d3a00;background:#ffd24a;}tr.fail td{color:#5e0e00;background:#ff9c8a;}tr:first-child td{border-top:1px black solid;}td:last-child{border-right:1px black solid;}tr.overview{font-weight:bold;color:#777;}tr.overview td{padding-bottom:0px;border-bottom:none;}tr.system-out td{color:#777;}hr{height:2px;margin:30px 0;background:#000;border:none;}</style>
-  </head>
-  <body>
-    <h1>Unit Test Results</h1>
-    <table cellspacing="0" cellpadding="0" border="0">
-      <tr class="overview">
-        <td colspan="3" title="Mozilla/5.0 (Macintosh; Intel Mac OS X) AppleWebKit/534.34 (KHTML, like Gecko) PhantomJS/1.9.8 Safari/534.34">Browser: PhantomJS 1.9.8 (Mac OS X)</td>
-      </tr>
-      <tr class="overview">
-        <td colspan="3">Timestamp: 2015-03-07T07:23:35</td>
-      </tr>
-      <tr>
-        <td colspan="3">
-          6 tests / 
-          0 errors / 
-          0 failures / 
-          0 skipped / 
-          runtime: 0.064s
-        </td>
-      </tr>
-      <tr class="header">
-        <td>Status</td>
-        <td>Spec</td>
-        <td>Suite / Results</td>
+        <td>Passed in 0.003s</td>
+        <td>should sort by source</td>
+        <td>Controller: bookingsController &raquo; Testing sorting functions</td>
       </tr>
       <tr class="pass">
-        <td>Passed in 0.031s</td>
-        <td>should init with correct values</td>
-        <td>Controller: bookingsController &raquo; Initialize values</td>
+        <td>Passed in 0.029s</td>
+        <td>should sort by destination</td>
+        <td>Controller: bookingsController &raquo; Testing sorting functions</td>
       </tr>
       <tr class="pass">
         <td>Passed in 0.004s</td>
-        <td>should show the modal and init the booking object</td>
-        <td>Controller: bookingsController &raquo; when addFlight button is clicked</td>
+        <td>should sort by datetime</td>
+        <td>Controller: bookingsController &raquo; Testing sorting functions</td>
       </tr>
       <tr class="pass">
-        <td>Passed in 0.002s</td>
-        <td>should hide the modal</td>
-        <td>Controller: bookingsController &raquo; when cancel button is clicked</td>
-      </tr>
-      <tr class="pass">
-        <td>Passed in 0.003s</td>
-        <td>should return false if the value is not a number</td>
-        <td>Controller: bookingsController &raquo; test isNumberic()</td>
-      </tr>
-      <tr class="pass">
-        <td>Passed in 0.018s</td>
+        <td>Passed in 0.004s</td>
         <td>should init with correct values</td>
         <td>Controller: homeController &raquo; Initialize values</td>
       </tr>
       <tr class="pass">
-        <td>Passed in 0.006s</td>
+        <td>Passed in 0.01s</td>
         <td>should have no error if access is succssful</td>
         <td>Controller: homeController &raquo; Login event</td>
+      </tr>
+      <tr class="system-out">
+        <td colspan="3"><strong>System output:</strong><br />PhantomJS 1.9.8 (Mac OS X) WARN: 'Deprecation warning: moment construction falls back to js Date. This is discouraged and will be removed in upcoming major release. Please refer to https://github.com/moment/moment/issues/1407 for more info.'
+</td>
       </tr>
     </table>
     <hr/>
@@ -134,15 +97,15 @@
         <td colspan="3" title="Mozilla/5.0 (Macintosh; Intel Mac OS X) AppleWebKit/534.34 (KHTML, like Gecko) PhantomJS/1.9.8 Safari/534.34">Browser: PhantomJS 1.9.8 (Mac OS X)</td>
       </tr>
       <tr class="overview">
-        <td colspan="3">Timestamp: 2015-03-07T07:23:35</td>
+        <td colspan="3">Timestamp: 2015-03-07T10:10:18</td>
       </tr>
       <tr>
         <td colspan="3">
-          6 tests / 
+          10 tests / 
           0 errors / 
           0 failures / 
           0 skipped / 
-          runtime: 0.069s
+          runtime: 0.1s
         </td>
       </tr>
       <tr class="header">
@@ -151,7 +114,7 @@
         <td>Suite / Results</td>
       </tr>
       <tr class="pass">
-        <td>Passed in 0.036s</td>
+        <td>Passed in 0.043s</td>
         <td>should init with correct values</td>
         <td>Controller: bookingsController &raquo; Initialize values</td>
       </tr>
@@ -172,196 +135,38 @@
       </tr>
       <tr class="pass">
         <td>Passed in 0.019s</td>
-        <td>should init with correct values</td>
-        <td>Controller: homeController &raquo; Initialize values</td>
-      </tr>
-      <tr class="pass">
-        <td>Passed in 0.006s</td>
-        <td>should have no error if access is succssful</td>
-        <td>Controller: homeController &raquo; Login event</td>
-      </tr>
-    </table>
-    <hr/>
-  </body>
-  <head>
-    <meta charset="utf-8"/>
-    <title>Unit Test Results</title>
-    <style type="text/css">html,body{font-family:Arial,sans-serif;margin:0;padding:0;}body{padding:10px 40px;}table{width:100%;margin-bottom:20px;}tr.header{background:#ddd;font-weight:bold;border-bottom:none;}td{padding:7px;border-top:none;border-left:1px black solid;border-bottom:1px black solid;border-right:none;}tr.pass td{color:#003b07;background:#86e191;}tr.skip td{color:#7d3a00;background:#ffd24a;}tr.fail td{color:#5e0e00;background:#ff9c8a;}tr:first-child td{border-top:1px black solid;}td:last-child{border-right:1px black solid;}tr.overview{font-weight:bold;color:#777;}tr.overview td{padding-bottom:0px;border-bottom:none;}tr.system-out td{color:#777;}hr{height:2px;margin:30px 0;background:#000;border:none;}</style>
-  </head>
-  <body>
-    <h1>Unit Test Results</h1>
-    <table cellspacing="0" cellpadding="0" border="0">
-      <tr class="overview">
-        <td colspan="3" title="Mozilla/5.0 (Macintosh; Intel Mac OS X) AppleWebKit/534.34 (KHTML, like Gecko) PhantomJS/1.9.8 Safari/534.34">Browser: PhantomJS 1.9.8 (Mac OS X)</td>
-      </tr>
-      <tr class="overview">
-        <td colspan="3">Timestamp: 2015-03-07T07:23:35</td>
-      </tr>
-      <tr>
-        <td colspan="3">
-          6 tests / 
-          0 errors / 
-          0 failures / 
-          0 skipped / 
-          runtime: 0.119s
-        </td>
-      </tr>
-      <tr class="header">
-        <td>Status</td>
-        <td>Spec</td>
-        <td>Suite / Results</td>
-      </tr>
-      <tr class="pass">
-        <td>Passed in 0.05s</td>
-        <td>should init with correct values</td>
-        <td>Controller: bookingsController &raquo; Initialize values</td>
-      </tr>
-      <tr class="pass">
-        <td>Passed in 0.012s</td>
-        <td>should show the modal and init the booking object</td>
-        <td>Controller: bookingsController &raquo; when addFlight button is clicked</td>
-      </tr>
-      <tr class="pass">
-        <td>Passed in 0.003s</td>
-        <td>should hide the modal</td>
-        <td>Controller: bookingsController &raquo; when cancel button is clicked</td>
-      </tr>
-      <tr class="pass">
-        <td>Passed in 0.003s</td>
-        <td>should return false if the value is not a number</td>
-        <td>Controller: bookingsController &raquo; test isNumberic()</td>
-      </tr>
-      <tr class="pass">
-        <td>Passed in 0.014s</td>
-        <td>should init with correct values</td>
-        <td>Controller: homeController &raquo; Initialize values</td>
-      </tr>
-      <tr class="pass">
-        <td>Passed in 0.037s</td>
-        <td>should have no error if access is succssful</td>
-        <td>Controller: homeController &raquo; Login event</td>
-      </tr>
-    </table>
-    <hr/>
-  </body>
-  <head>
-    <meta charset="utf-8"/>
-    <title>Unit Test Results</title>
-    <style type="text/css">html,body{font-family:Arial,sans-serif;margin:0;padding:0;}body{padding:10px 40px;}table{width:100%;margin-bottom:20px;}tr.header{background:#ddd;font-weight:bold;border-bottom:none;}td{padding:7px;border-top:none;border-left:1px black solid;border-bottom:1px black solid;border-right:none;}tr.pass td{color:#003b07;background:#86e191;}tr.skip td{color:#7d3a00;background:#ffd24a;}tr.fail td{color:#5e0e00;background:#ff9c8a;}tr:first-child td{border-top:1px black solid;}td:last-child{border-right:1px black solid;}tr.overview{font-weight:bold;color:#777;}tr.overview td{padding-bottom:0px;border-bottom:none;}tr.system-out td{color:#777;}hr{height:2px;margin:30px 0;background:#000;border:none;}</style>
-  </head>
-  <body>
-    <h1>Unit Test Results</h1>
-    <table cellspacing="0" cellpadding="0" border="0">
-      <tr class="overview">
-        <td colspan="3" title="Mozilla/5.0 (Macintosh; Intel Mac OS X) AppleWebKit/534.34 (KHTML, like Gecko) PhantomJS/1.9.8 Safari/534.34">Browser: PhantomJS 1.9.8 (Mac OS X)</td>
-      </tr>
-      <tr class="overview">
-        <td colspan="3">Timestamp: 2015-03-07T07:23:35</td>
-      </tr>
-      <tr>
-        <td colspan="3">
-          6 tests / 
-          0 errors / 
-          0 failures / 
-          0 skipped / 
-          runtime: 0.082s
-        </td>
-      </tr>
-      <tr class="header">
-        <td>Status</td>
-        <td>Spec</td>
-        <td>Suite / Results</td>
-      </tr>
-      <tr class="pass">
-        <td>Passed in 0.028s</td>
-        <td>should init with correct values</td>
-        <td>Controller: bookingsController &raquo; Initialize values</td>
-      </tr>
-      <tr class="pass">
-        <td>Passed in 0.016s</td>
-        <td>should show the modal and init the booking object</td>
-        <td>Controller: bookingsController &raquo; when addFlight button is clicked</td>
+        <td>should sort by capacity</td>
+        <td>Controller: bookingsController &raquo; Testing sorting functions</td>
       </tr>
       <tr class="pass">
         <td>Passed in 0.002s</td>
-        <td>should hide the modal</td>
-        <td>Controller: bookingsController &raquo; when cancel button is clicked</td>
-      </tr>
-      <tr class="pass">
-        <td>Passed in 0.003s</td>
-        <td>should return false if the value is not a number</td>
-        <td>Controller: bookingsController &raquo; test isNumberic()</td>
-      </tr>
-      <tr class="pass">
-        <td>Passed in 0.003s</td>
-        <td>should init with correct values</td>
-        <td>Controller: homeController &raquo; Initialize values</td>
-      </tr>
-      <tr class="pass">
-        <td>Passed in 0.03s</td>
-        <td>should have no error if access is succssful</td>
-        <td>Controller: homeController &raquo; Login event</td>
-      </tr>
-    </table>
-    <hr/>
-  </body>
-  <head>
-    <meta charset="utf-8"/>
-    <title>Unit Test Results</title>
-    <style type="text/css">html,body{font-family:Arial,sans-serif;margin:0;padding:0;}body{padding:10px 40px;}table{width:100%;margin-bottom:20px;}tr.header{background:#ddd;font-weight:bold;border-bottom:none;}td{padding:7px;border-top:none;border-left:1px black solid;border-bottom:1px black solid;border-right:none;}tr.pass td{color:#003b07;background:#86e191;}tr.skip td{color:#7d3a00;background:#ffd24a;}tr.fail td{color:#5e0e00;background:#ff9c8a;}tr:first-child td{border-top:1px black solid;}td:last-child{border-right:1px black solid;}tr.overview{font-weight:bold;color:#777;}tr.overview td{padding-bottom:0px;border-bottom:none;}tr.system-out td{color:#777;}hr{height:2px;margin:30px 0;background:#000;border:none;}</style>
-  </head>
-  <body>
-    <h1>Unit Test Results</h1>
-    <table cellspacing="0" cellpadding="0" border="0">
-      <tr class="overview">
-        <td colspan="3" title="Mozilla/5.0 (Macintosh; Intel Mac OS X) AppleWebKit/534.34 (KHTML, like Gecko) PhantomJS/1.9.8 Safari/534.34">Browser: PhantomJS 1.9.8 (Mac OS X)</td>
-      </tr>
-      <tr class="overview">
-        <td colspan="3">Timestamp: 2015-03-07T07:23:35</td>
-      </tr>
-      <tr>
-        <td colspan="3">
-          6 tests / 
-          0 errors / 
-          0 failures / 
-          0 skipped / 
-          runtime: 0.119s
-        </td>
-      </tr>
-      <tr class="header">
-        <td>Status</td>
-        <td>Spec</td>
-        <td>Suite / Results</td>
-      </tr>
-      <tr class="pass">
-        <td>Passed in 0.059s</td>
-        <td>should init with correct values</td>
-        <td>Controller: bookingsController &raquo; Initialize values</td>
-      </tr>
-      <tr class="pass">
-        <td>Passed in 0.003s</td>
-        <td>should show the modal and init the booking object</td>
-        <td>Controller: bookingsController &raquo; when addFlight button is clicked</td>
-      </tr>
-      <tr class="pass">
-        <td>Passed in 0.003s</td>
-        <td>should hide the modal</td>
-        <td>Controller: bookingsController &raquo; when cancel button is clicked</td>
+        <td>should sort by source</td>
+        <td>Controller: bookingsController &raquo; Testing sorting functions</td>
       </tr>
       <tr class="pass">
         <td>Passed in 0.002s</td>
-        <td>should return false if the value is not a number</td>
-        <td>Controller: bookingsController &raquo; test isNumberic()</td>
+        <td>should sort by destination</td>
+        <td>Controller: bookingsController &raquo; Testing sorting functions</td>
       </tr>
       <tr class="pass">
-        <td>Passed in 0.038s</td>
+        <td>Passed in 0.004s</td>
+        <td>should sort by datetime</td>
+        <td>Controller: bookingsController &raquo; Testing sorting functions</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.003s</td>
         <td>should init with correct values</td>
         <td>Controller: homeController &raquo; Initialize values</td>
       </tr>
       <tr class="pass">
-        <td>Passed in 0.014s</td>
+        <td>Passed in 0.019s</td>
         <td>should have no error if access is succssful</td>
         <td>Controller: homeController &raquo; Login event</td>
+      </tr>
+      <tr class="system-out">
+        <td colspan="3"><strong>System output:</strong><br />PhantomJS 1.9.8 (Mac OS X) WARN: 'Deprecation warning: moment construction falls back to js Date. This is discouraged and will be removed in upcoming major release. Please refer to https://github.com/moment/moment/issues/1407 for more info.'
+<br />PhantomJS 1.9.8 (Mac OS X) WARN: 'Deprecation warning: moment construction falls back to js Date. This is discouraged and will be removed in upcoming major release. Please refer to https://github.com/moment/moment/issues/1407 for more info.'
+</td>
       </tr>
     </table>
     <hr/>
@@ -378,15 +183,15 @@
         <td colspan="3" title="Mozilla/5.0 (Macintosh; Intel Mac OS X) AppleWebKit/534.34 (KHTML, like Gecko) PhantomJS/1.9.8 Safari/534.34">Browser: PhantomJS 1.9.8 (Mac OS X)</td>
       </tr>
       <tr class="overview">
-        <td colspan="3">Timestamp: 2015-03-07T07:23:35</td>
+        <td colspan="3">Timestamp: 2015-03-07T10:10:18</td>
       </tr>
       <tr>
         <td colspan="3">
-          6 tests / 
+          10 tests / 
           0 errors / 
           0 failures / 
           0 skipped / 
-          runtime: 0.071s
+          runtime: 0.128s
         </td>
       </tr>
       <tr class="header">
@@ -400,12 +205,12 @@
         <td>Controller: bookingsController &raquo; Initialize values</td>
       </tr>
       <tr class="pass">
-        <td>Passed in 0.005s</td>
+        <td>Passed in 0.003s</td>
         <td>should show the modal and init the booking object</td>
         <td>Controller: bookingsController &raquo; when addFlight button is clicked</td>
       </tr>
       <tr class="pass">
-        <td>Passed in 0.005s</td>
+        <td>Passed in 0.003s</td>
         <td>should hide the modal</td>
         <td>Controller: bookingsController &raquo; when cancel button is clicked</td>
       </tr>
@@ -415,7 +220,27 @@
         <td>Controller: bookingsController &raquo; test isNumberic()</td>
       </tr>
       <tr class="pass">
-        <td>Passed in 0.007s</td>
+        <td>Passed in 0.02s</td>
+        <td>should sort by capacity</td>
+        <td>Controller: bookingsController &raquo; Testing sorting functions</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.003s</td>
+        <td>should sort by source</td>
+        <td>Controller: bookingsController &raquo; Testing sorting functions</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.002s</td>
+        <td>should sort by destination</td>
+        <td>Controller: bookingsController &raquo; Testing sorting functions</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.005s</td>
+        <td>should sort by datetime</td>
+        <td>Controller: bookingsController &raquo; Testing sorting functions</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.038s</td>
         <td>should init with correct values</td>
         <td>Controller: homeController &raquo; Initialize values</td>
       </tr>
@@ -423,6 +248,12 @@
         <td>Passed in 0.007s</td>
         <td>should have no error if access is succssful</td>
         <td>Controller: homeController &raquo; Login event</td>
+      </tr>
+      <tr class="system-out">
+        <td colspan="3"><strong>System output:</strong><br />PhantomJS 1.9.8 (Mac OS X) WARN: 'Deprecation warning: moment construction falls back to js Date. This is discouraged and will be removed in upcoming major release. Please refer to https://github.com/moment/moment/issues/1407 for more info.'
+<br />PhantomJS 1.9.8 (Mac OS X) WARN: 'Deprecation warning: moment construction falls back to js Date. This is discouraged and will be removed in upcoming major release. Please refer to https://github.com/moment/moment/issues/1407 for more info.'
+<br />PhantomJS 1.9.8 (Mac OS X) WARN: 'Deprecation warning: moment construction falls back to js Date. This is discouraged and will be removed in upcoming major release. Please refer to https://github.com/moment/moment/issues/1407 for more info.'
+</td>
       </tr>
     </table>
     <hr/>
@@ -439,15 +270,15 @@
         <td colspan="3" title="Mozilla/5.0 (Macintosh; Intel Mac OS X) AppleWebKit/534.34 (KHTML, like Gecko) PhantomJS/1.9.8 Safari/534.34">Browser: PhantomJS 1.9.8 (Mac OS X)</td>
       </tr>
       <tr class="overview">
-        <td colspan="3">Timestamp: 2015-03-07T07:23:35</td>
+        <td colspan="3">Timestamp: 2015-03-07T10:10:18</td>
       </tr>
       <tr>
         <td colspan="3">
-          6 tests / 
+          10 tests / 
           0 errors / 
           0 failures / 
           0 skipped / 
-          runtime: 0.08s
+          runtime: 0.096s
         </td>
       </tr>
       <tr class="header">
@@ -456,34 +287,61 @@
         <td>Suite / Results</td>
       </tr>
       <tr class="pass">
-        <td>Passed in 0.042s</td>
+        <td>Passed in 0.043s</td>
         <td>should init with correct values</td>
         <td>Controller: bookingsController &raquo; Initialize values</td>
-      </tr>
-      <tr class="pass">
-        <td>Passed in 0.004s</td>
-        <td>should show the modal and init the booking object</td>
-        <td>Controller: bookingsController &raquo; when addFlight button is clicked</td>
-      </tr>
-      <tr class="pass">
-        <td>Passed in 0.003s</td>
-        <td>should hide the modal</td>
-        <td>Controller: bookingsController &raquo; when cancel button is clicked</td>
-      </tr>
-      <tr class="pass">
-        <td>Passed in 0.004s</td>
-        <td>should return false if the value is not a number</td>
-        <td>Controller: bookingsController &raquo; test isNumberic()</td>
-      </tr>
-      <tr class="pass">
-        <td>Passed in 0.021s</td>
-        <td>should init with correct values</td>
-        <td>Controller: homeController &raquo; Initialize values</td>
       </tr>
       <tr class="pass">
         <td>Passed in 0.006s</td>
+        <td>should show the modal and init the booking object</td>
+        <td>Controller: bookingsController &raquo; when addFlight button is clicked</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.003s</td>
+        <td>should hide the modal</td>
+        <td>Controller: bookingsController &raquo; when cancel button is clicked</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.015s</td>
+        <td>should return false if the value is not a number</td>
+        <td>Controller: bookingsController &raquo; test isNumberic()</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.003s</td>
+        <td>should sort by capacity</td>
+        <td>Controller: bookingsController &raquo; Testing sorting functions</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.003s</td>
+        <td>should sort by source</td>
+        <td>Controller: bookingsController &raquo; Testing sorting functions</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.002s</td>
+        <td>should sort by destination</td>
+        <td>Controller: bookingsController &raquo; Testing sorting functions</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.005s</td>
+        <td>should sort by datetime</td>
+        <td>Controller: bookingsController &raquo; Testing sorting functions</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.005s</td>
+        <td>should init with correct values</td>
+        <td>Controller: homeController &raquo; Initialize values</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.011s</td>
         <td>should have no error if access is succssful</td>
         <td>Controller: homeController &raquo; Login event</td>
+      </tr>
+      <tr class="system-out">
+        <td colspan="3"><strong>System output:</strong><br />PhantomJS 1.9.8 (Mac OS X) WARN: 'Deprecation warning: moment construction falls back to js Date. This is discouraged and will be removed in upcoming major release. Please refer to https://github.com/moment/moment/issues/1407 for more info.'
+<br />PhantomJS 1.9.8 (Mac OS X) WARN: 'Deprecation warning: moment construction falls back to js Date. This is discouraged and will be removed in upcoming major release. Please refer to https://github.com/moment/moment/issues/1407 for more info.'
+<br />PhantomJS 1.9.8 (Mac OS X) WARN: 'Deprecation warning: moment construction falls back to js Date. This is discouraged and will be removed in upcoming major release. Please refer to https://github.com/moment/moment/issues/1407 for more info.'
+<br />PhantomJS 1.9.8 (Mac OS X) WARN: 'Deprecation warning: moment construction falls back to js Date. This is discouraged and will be removed in upcoming major release. Please refer to https://github.com/moment/moment/issues/1407 for more info.'
+</td>
       </tr>
     </table>
     <hr/>
@@ -500,15 +358,15 @@
         <td colspan="3" title="Mozilla/5.0 (Macintosh; Intel Mac OS X) AppleWebKit/534.34 (KHTML, like Gecko) PhantomJS/1.9.8 Safari/534.34">Browser: PhantomJS 1.9.8 (Mac OS X)</td>
       </tr>
       <tr class="overview">
-        <td colspan="3">Timestamp: 2015-03-07T07:23:35</td>
+        <td colspan="3">Timestamp: 2015-03-07T10:10:18</td>
       </tr>
       <tr>
         <td colspan="3">
-          6 tests / 
+          10 tests / 
           0 errors / 
           0 failures / 
           0 skipped / 
-          runtime: 0.113s
+          runtime: 0.092s
         </td>
       </tr>
       <tr class="header">
@@ -517,12 +375,12 @@
         <td>Suite / Results</td>
       </tr>
       <tr class="pass">
-        <td>Passed in 0.095s</td>
+        <td>Passed in 0.028s</td>
         <td>should init with correct values</td>
         <td>Controller: bookingsController &raquo; Initialize values</td>
       </tr>
       <tr class="pass">
-        <td>Passed in 0.004s</td>
+        <td>Passed in 0.003s</td>
         <td>should show the modal and init the booking object</td>
         <td>Controller: bookingsController &raquo; when addFlight button is clicked</td>
       </tr>
@@ -532,9 +390,208 @@
         <td>Controller: bookingsController &raquo; when cancel button is clicked</td>
       </tr>
       <tr class="pass">
-        <td>Passed in 0.002s</td>
+        <td>Passed in 0.007s</td>
         <td>should return false if the value is not a number</td>
         <td>Controller: bookingsController &raquo; test isNumberic()</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.02s</td>
+        <td>should sort by capacity</td>
+        <td>Controller: bookingsController &raquo; Testing sorting functions</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.003s</td>
+        <td>should sort by source</td>
+        <td>Controller: bookingsController &raquo; Testing sorting functions</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.003s</td>
+        <td>should sort by destination</td>
+        <td>Controller: bookingsController &raquo; Testing sorting functions</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.014s</td>
+        <td>should sort by datetime</td>
+        <td>Controller: bookingsController &raquo; Testing sorting functions</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.002s</td>
+        <td>should init with correct values</td>
+        <td>Controller: homeController &raquo; Initialize values</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.01s</td>
+        <td>should have no error if access is succssful</td>
+        <td>Controller: homeController &raquo; Login event</td>
+      </tr>
+      <tr class="system-out">
+        <td colspan="3"><strong>System output:</strong><br />PhantomJS 1.9.8 (Mac OS X) WARN: 'Deprecation warning: moment construction falls back to js Date. This is discouraged and will be removed in upcoming major release. Please refer to https://github.com/moment/moment/issues/1407 for more info.'
+<br />PhantomJS 1.9.8 (Mac OS X) WARN: 'Deprecation warning: moment construction falls back to js Date. This is discouraged and will be removed in upcoming major release. Please refer to https://github.com/moment/moment/issues/1407 for more info.'
+<br />PhantomJS 1.9.8 (Mac OS X) WARN: 'Deprecation warning: moment construction falls back to js Date. This is discouraged and will be removed in upcoming major release. Please refer to https://github.com/moment/moment/issues/1407 for more info.'
+<br />PhantomJS 1.9.8 (Mac OS X) WARN: 'Deprecation warning: moment construction falls back to js Date. This is discouraged and will be removed in upcoming major release. Please refer to https://github.com/moment/moment/issues/1407 for more info.'
+<br />PhantomJS 1.9.8 (Mac OS X) WARN: 'Deprecation warning: moment construction falls back to js Date. This is discouraged and will be removed in upcoming major release. Please refer to https://github.com/moment/moment/issues/1407 for more info.'
+</td>
+      </tr>
+    </table>
+    <hr/>
+  </body>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Unit Test Results</title>
+    <style type="text/css">html,body{font-family:Arial,sans-serif;margin:0;padding:0;}body{padding:10px 40px;}table{width:100%;margin-bottom:20px;}tr.header{background:#ddd;font-weight:bold;border-bottom:none;}td{padding:7px;border-top:none;border-left:1px black solid;border-bottom:1px black solid;border-right:none;}tr.pass td{color:#003b07;background:#86e191;}tr.skip td{color:#7d3a00;background:#ffd24a;}tr.fail td{color:#5e0e00;background:#ff9c8a;}tr:first-child td{border-top:1px black solid;}td:last-child{border-right:1px black solid;}tr.overview{font-weight:bold;color:#777;}tr.overview td{padding-bottom:0px;border-bottom:none;}tr.system-out td{color:#777;}hr{height:2px;margin:30px 0;background:#000;border:none;}</style>
+  </head>
+  <body>
+    <h1>Unit Test Results</h1>
+    <table cellspacing="0" cellpadding="0" border="0">
+      <tr class="overview">
+        <td colspan="3" title="Mozilla/5.0 (Macintosh; Intel Mac OS X) AppleWebKit/534.34 (KHTML, like Gecko) PhantomJS/1.9.8 Safari/534.34">Browser: PhantomJS 1.9.8 (Mac OS X)</td>
+      </tr>
+      <tr class="overview">
+        <td colspan="3">Timestamp: 2015-03-07T10:10:18</td>
+      </tr>
+      <tr>
+        <td colspan="3">
+          10 tests / 
+          0 errors / 
+          0 failures / 
+          0 skipped / 
+          runtime: 0.114s
+        </td>
+      </tr>
+      <tr class="header">
+        <td>Status</td>
+        <td>Spec</td>
+        <td>Suite / Results</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.041s</td>
+        <td>should init with correct values</td>
+        <td>Controller: bookingsController &raquo; Initialize values</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.01s</td>
+        <td>should show the modal and init the booking object</td>
+        <td>Controller: bookingsController &raquo; when addFlight button is clicked</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.002s</td>
+        <td>should hide the modal</td>
+        <td>Controller: bookingsController &raquo; when cancel button is clicked</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.022s</td>
+        <td>should return false if the value is not a number</td>
+        <td>Controller: bookingsController &raquo; test isNumberic()</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.003s</td>
+        <td>should sort by capacity</td>
+        <td>Controller: bookingsController &raquo; Testing sorting functions</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.002s</td>
+        <td>should sort by source</td>
+        <td>Controller: bookingsController &raquo; Testing sorting functions</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.012s</td>
+        <td>should sort by destination</td>
+        <td>Controller: bookingsController &raquo; Testing sorting functions</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.005s</td>
+        <td>should sort by datetime</td>
+        <td>Controller: bookingsController &raquo; Testing sorting functions</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.002s</td>
+        <td>should init with correct values</td>
+        <td>Controller: homeController &raquo; Initialize values</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.015s</td>
+        <td>should have no error if access is succssful</td>
+        <td>Controller: homeController &raquo; Login event</td>
+      </tr>
+      <tr class="system-out">
+        <td colspan="3"><strong>System output:</strong><br />PhantomJS 1.9.8 (Mac OS X) WARN: 'Deprecation warning: moment construction falls back to js Date. This is discouraged and will be removed in upcoming major release. Please refer to https://github.com/moment/moment/issues/1407 for more info.'
+<br />PhantomJS 1.9.8 (Mac OS X) WARN: 'Deprecation warning: moment construction falls back to js Date. This is discouraged and will be removed in upcoming major release. Please refer to https://github.com/moment/moment/issues/1407 for more info.'
+<br />PhantomJS 1.9.8 (Mac OS X) WARN: 'Deprecation warning: moment construction falls back to js Date. This is discouraged and will be removed in upcoming major release. Please refer to https://github.com/moment/moment/issues/1407 for more info.'
+<br />PhantomJS 1.9.8 (Mac OS X) WARN: 'Deprecation warning: moment construction falls back to js Date. This is discouraged and will be removed in upcoming major release. Please refer to https://github.com/moment/moment/issues/1407 for more info.'
+<br />PhantomJS 1.9.8 (Mac OS X) WARN: 'Deprecation warning: moment construction falls back to js Date. This is discouraged and will be removed in upcoming major release. Please refer to https://github.com/moment/moment/issues/1407 for more info.'
+<br />PhantomJS 1.9.8 (Mac OS X) WARN: 'Deprecation warning: moment construction falls back to js Date. This is discouraged and will be removed in upcoming major release. Please refer to https://github.com/moment/moment/issues/1407 for more info.'
+</td>
+      </tr>
+    </table>
+    <hr/>
+  </body>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Unit Test Results</title>
+    <style type="text/css">html,body{font-family:Arial,sans-serif;margin:0;padding:0;}body{padding:10px 40px;}table{width:100%;margin-bottom:20px;}tr.header{background:#ddd;font-weight:bold;border-bottom:none;}td{padding:7px;border-top:none;border-left:1px black solid;border-bottom:1px black solid;border-right:none;}tr.pass td{color:#003b07;background:#86e191;}tr.skip td{color:#7d3a00;background:#ffd24a;}tr.fail td{color:#5e0e00;background:#ff9c8a;}tr:first-child td{border-top:1px black solid;}td:last-child{border-right:1px black solid;}tr.overview{font-weight:bold;color:#777;}tr.overview td{padding-bottom:0px;border-bottom:none;}tr.system-out td{color:#777;}hr{height:2px;margin:30px 0;background:#000;border:none;}</style>
+  </head>
+  <body>
+    <h1>Unit Test Results</h1>
+    <table cellspacing="0" cellpadding="0" border="0">
+      <tr class="overview">
+        <td colspan="3" title="Mozilla/5.0 (Macintosh; Intel Mac OS X) AppleWebKit/534.34 (KHTML, like Gecko) PhantomJS/1.9.8 Safari/534.34">Browser: PhantomJS 1.9.8 (Mac OS X)</td>
+      </tr>
+      <tr class="overview">
+        <td colspan="3">Timestamp: 2015-03-07T10:10:18</td>
+      </tr>
+      <tr>
+        <td colspan="3">
+          10 tests / 
+          0 errors / 
+          0 failures / 
+          0 skipped / 
+          runtime: 0.124s
+        </td>
+      </tr>
+      <tr class="header">
+        <td>Status</td>
+        <td>Spec</td>
+        <td>Suite / Results</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.046s</td>
+        <td>should init with correct values</td>
+        <td>Controller: bookingsController &raquo; Initialize values</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.003s</td>
+        <td>should show the modal and init the booking object</td>
+        <td>Controller: bookingsController &raquo; when addFlight button is clicked</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.005s</td>
+        <td>should hide the modal</td>
+        <td>Controller: bookingsController &raquo; when cancel button is clicked</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.014s</td>
+        <td>should return false if the value is not a number</td>
+        <td>Controller: bookingsController &raquo; test isNumberic()</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.003s</td>
+        <td>should sort by capacity</td>
+        <td>Controller: bookingsController &raquo; Testing sorting functions</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.003s</td>
+        <td>should sort by source</td>
+        <td>Controller: bookingsController &raquo; Testing sorting functions</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.01s</td>
+        <td>should sort by destination</td>
+        <td>Controller: bookingsController &raquo; Testing sorting functions</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.006s</td>
+        <td>should sort by datetime</td>
+        <td>Controller: bookingsController &raquo; Testing sorting functions</td>
       </tr>
       <tr class="pass">
         <td>Passed in 0.003s</td>
@@ -542,9 +599,204 @@
         <td>Controller: homeController &raquo; Initialize values</td>
       </tr>
       <tr class="pass">
-        <td>Passed in 0.007s</td>
+        <td>Passed in 0.031s</td>
         <td>should have no error if access is succssful</td>
         <td>Controller: homeController &raquo; Login event</td>
+      </tr>
+      <tr class="system-out">
+        <td colspan="3"><strong>System output:</strong><br />PhantomJS 1.9.8 (Mac OS X) WARN: 'Deprecation warning: moment construction falls back to js Date. This is discouraged and will be removed in upcoming major release. Please refer to https://github.com/moment/moment/issues/1407 for more info.'
+<br />PhantomJS 1.9.8 (Mac OS X) WARN: 'Deprecation warning: moment construction falls back to js Date. This is discouraged and will be removed in upcoming major release. Please refer to https://github.com/moment/moment/issues/1407 for more info.'
+<br />PhantomJS 1.9.8 (Mac OS X) WARN: 'Deprecation warning: moment construction falls back to js Date. This is discouraged and will be removed in upcoming major release. Please refer to https://github.com/moment/moment/issues/1407 for more info.'
+<br />PhantomJS 1.9.8 (Mac OS X) WARN: 'Deprecation warning: moment construction falls back to js Date. This is discouraged and will be removed in upcoming major release. Please refer to https://github.com/moment/moment/issues/1407 for more info.'
+<br />PhantomJS 1.9.8 (Mac OS X) WARN: 'Deprecation warning: moment construction falls back to js Date. This is discouraged and will be removed in upcoming major release. Please refer to https://github.com/moment/moment/issues/1407 for more info.'
+<br />PhantomJS 1.9.8 (Mac OS X) WARN: 'Deprecation warning: moment construction falls back to js Date. This is discouraged and will be removed in upcoming major release. Please refer to https://github.com/moment/moment/issues/1407 for more info.'
+<br />PhantomJS 1.9.8 (Mac OS X) WARN: 'Deprecation warning: moment construction falls back to js Date. This is discouraged and will be removed in upcoming major release. Please refer to https://github.com/moment/moment/issues/1407 for more info.'
+</td>
+      </tr>
+    </table>
+    <hr/>
+  </body>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Unit Test Results</title>
+    <style type="text/css">html,body{font-family:Arial,sans-serif;margin:0;padding:0;}body{padding:10px 40px;}table{width:100%;margin-bottom:20px;}tr.header{background:#ddd;font-weight:bold;border-bottom:none;}td{padding:7px;border-top:none;border-left:1px black solid;border-bottom:1px black solid;border-right:none;}tr.pass td{color:#003b07;background:#86e191;}tr.skip td{color:#7d3a00;background:#ffd24a;}tr.fail td{color:#5e0e00;background:#ff9c8a;}tr:first-child td{border-top:1px black solid;}td:last-child{border-right:1px black solid;}tr.overview{font-weight:bold;color:#777;}tr.overview td{padding-bottom:0px;border-bottom:none;}tr.system-out td{color:#777;}hr{height:2px;margin:30px 0;background:#000;border:none;}</style>
+  </head>
+  <body>
+    <h1>Unit Test Results</h1>
+    <table cellspacing="0" cellpadding="0" border="0">
+      <tr class="overview">
+        <td colspan="3" title="Mozilla/5.0 (Macintosh; Intel Mac OS X) AppleWebKit/534.34 (KHTML, like Gecko) PhantomJS/1.9.8 Safari/534.34">Browser: PhantomJS 1.9.8 (Mac OS X)</td>
+      </tr>
+      <tr class="overview">
+        <td colspan="3">Timestamp: 2015-03-07T10:10:18</td>
+      </tr>
+      <tr>
+        <td colspan="3">
+          10 tests / 
+          0 errors / 
+          0 failures / 
+          0 skipped / 
+          runtime: 0.149s
+        </td>
+      </tr>
+      <tr class="header">
+        <td>Status</td>
+        <td>Spec</td>
+        <td>Suite / Results</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.029s</td>
+        <td>should init with correct values</td>
+        <td>Controller: bookingsController &raquo; Initialize values</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.003s</td>
+        <td>should show the modal and init the booking object</td>
+        <td>Controller: bookingsController &raquo; when addFlight button is clicked</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.003s</td>
+        <td>should hide the modal</td>
+        <td>Controller: bookingsController &raquo; when cancel button is clicked</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.032s</td>
+        <td>should return false if the value is not a number</td>
+        <td>Controller: bookingsController &raquo; test isNumberic()</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.003s</td>
+        <td>should sort by capacity</td>
+        <td>Controller: bookingsController &raquo; Testing sorting functions</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.003s</td>
+        <td>should sort by source</td>
+        <td>Controller: bookingsController &raquo; Testing sorting functions</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.065s</td>
+        <td>should sort by destination</td>
+        <td>Controller: bookingsController &raquo; Testing sorting functions</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.004s</td>
+        <td>should sort by datetime</td>
+        <td>Controller: bookingsController &raquo; Testing sorting functions</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.002s</td>
+        <td>should init with correct values</td>
+        <td>Controller: homeController &raquo; Initialize values</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.005s</td>
+        <td>should have no error if access is succssful</td>
+        <td>Controller: homeController &raquo; Login event</td>
+      </tr>
+      <tr class="system-out">
+        <td colspan="3"><strong>System output:</strong><br />PhantomJS 1.9.8 (Mac OS X) WARN: 'Deprecation warning: moment construction falls back to js Date. This is discouraged and will be removed in upcoming major release. Please refer to https://github.com/moment/moment/issues/1407 for more info.'
+<br />PhantomJS 1.9.8 (Mac OS X) WARN: 'Deprecation warning: moment construction falls back to js Date. This is discouraged and will be removed in upcoming major release. Please refer to https://github.com/moment/moment/issues/1407 for more info.'
+<br />PhantomJS 1.9.8 (Mac OS X) WARN: 'Deprecation warning: moment construction falls back to js Date. This is discouraged and will be removed in upcoming major release. Please refer to https://github.com/moment/moment/issues/1407 for more info.'
+<br />PhantomJS 1.9.8 (Mac OS X) WARN: 'Deprecation warning: moment construction falls back to js Date. This is discouraged and will be removed in upcoming major release. Please refer to https://github.com/moment/moment/issues/1407 for more info.'
+<br />PhantomJS 1.9.8 (Mac OS X) WARN: 'Deprecation warning: moment construction falls back to js Date. This is discouraged and will be removed in upcoming major release. Please refer to https://github.com/moment/moment/issues/1407 for more info.'
+<br />PhantomJS 1.9.8 (Mac OS X) WARN: 'Deprecation warning: moment construction falls back to js Date. This is discouraged and will be removed in upcoming major release. Please refer to https://github.com/moment/moment/issues/1407 for more info.'
+<br />PhantomJS 1.9.8 (Mac OS X) WARN: 'Deprecation warning: moment construction falls back to js Date. This is discouraged and will be removed in upcoming major release. Please refer to https://github.com/moment/moment/issues/1407 for more info.'
+<br />PhantomJS 1.9.8 (Mac OS X) WARN: 'Deprecation warning: moment construction falls back to js Date. This is discouraged and will be removed in upcoming major release. Please refer to https://github.com/moment/moment/issues/1407 for more info.'
+</td>
+      </tr>
+    </table>
+    <hr/>
+  </body>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Unit Test Results</title>
+    <style type="text/css">html,body{font-family:Arial,sans-serif;margin:0;padding:0;}body{padding:10px 40px;}table{width:100%;margin-bottom:20px;}tr.header{background:#ddd;font-weight:bold;border-bottom:none;}td{padding:7px;border-top:none;border-left:1px black solid;border-bottom:1px black solid;border-right:none;}tr.pass td{color:#003b07;background:#86e191;}tr.skip td{color:#7d3a00;background:#ffd24a;}tr.fail td{color:#5e0e00;background:#ff9c8a;}tr:first-child td{border-top:1px black solid;}td:last-child{border-right:1px black solid;}tr.overview{font-weight:bold;color:#777;}tr.overview td{padding-bottom:0px;border-bottom:none;}tr.system-out td{color:#777;}hr{height:2px;margin:30px 0;background:#000;border:none;}</style>
+  </head>
+  <body>
+    <h1>Unit Test Results</h1>
+    <table cellspacing="0" cellpadding="0" border="0">
+      <tr class="overview">
+        <td colspan="3" title="Mozilla/5.0 (Macintosh; Intel Mac OS X) AppleWebKit/534.34 (KHTML, like Gecko) PhantomJS/1.9.8 Safari/534.34">Browser: PhantomJS 1.9.8 (Mac OS X)</td>
+      </tr>
+      <tr class="overview">
+        <td colspan="3">Timestamp: 2015-03-07T10:10:18</td>
+      </tr>
+      <tr>
+        <td colspan="3">
+          10 tests / 
+          0 errors / 
+          0 failures / 
+          0 skipped / 
+          runtime: 0.192s
+        </td>
+      </tr>
+      <tr class="header">
+        <td>Status</td>
+        <td>Spec</td>
+        <td>Suite / Results</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.039s</td>
+        <td>should init with correct values</td>
+        <td>Controller: bookingsController &raquo; Initialize values</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.003s</td>
+        <td>should show the modal and init the booking object</td>
+        <td>Controller: bookingsController &raquo; when addFlight button is clicked</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.003s</td>
+        <td>should hide the modal</td>
+        <td>Controller: bookingsController &raquo; when cancel button is clicked</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.011s</td>
+        <td>should return false if the value is not a number</td>
+        <td>Controller: bookingsController &raquo; test isNumberic()</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.003s</td>
+        <td>should sort by capacity</td>
+        <td>Controller: bookingsController &raquo; Testing sorting functions</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.036s</td>
+        <td>should sort by source</td>
+        <td>Controller: bookingsController &raquo; Testing sorting functions</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.003s</td>
+        <td>should sort by destination</td>
+        <td>Controller: bookingsController &raquo; Testing sorting functions</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.004s</td>
+        <td>should sort by datetime</td>
+        <td>Controller: bookingsController &raquo; Testing sorting functions</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.085s</td>
+        <td>should init with correct values</td>
+        <td>Controller: homeController &raquo; Initialize values</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.005s</td>
+        <td>should have no error if access is succssful</td>
+        <td>Controller: homeController &raquo; Login event</td>
+      </tr>
+      <tr class="system-out">
+        <td colspan="3"><strong>System output:</strong><br />PhantomJS 1.9.8 (Mac OS X) WARN: 'Deprecation warning: moment construction falls back to js Date. This is discouraged and will be removed in upcoming major release. Please refer to https://github.com/moment/moment/issues/1407 for more info.'
+<br />PhantomJS 1.9.8 (Mac OS X) WARN: 'Deprecation warning: moment construction falls back to js Date. This is discouraged and will be removed in upcoming major release. Please refer to https://github.com/moment/moment/issues/1407 for more info.'
+<br />PhantomJS 1.9.8 (Mac OS X) WARN: 'Deprecation warning: moment construction falls back to js Date. This is discouraged and will be removed in upcoming major release. Please refer to https://github.com/moment/moment/issues/1407 for more info.'
+<br />PhantomJS 1.9.8 (Mac OS X) WARN: 'Deprecation warning: moment construction falls back to js Date. This is discouraged and will be removed in upcoming major release. Please refer to https://github.com/moment/moment/issues/1407 for more info.'
+<br />PhantomJS 1.9.8 (Mac OS X) WARN: 'Deprecation warning: moment construction falls back to js Date. This is discouraged and will be removed in upcoming major release. Please refer to https://github.com/moment/moment/issues/1407 for more info.'
+<br />PhantomJS 1.9.8 (Mac OS X) WARN: 'Deprecation warning: moment construction falls back to js Date. This is discouraged and will be removed in upcoming major release. Please refer to https://github.com/moment/moment/issues/1407 for more info.'
+<br />PhantomJS 1.9.8 (Mac OS X) WARN: 'Deprecation warning: moment construction falls back to js Date. This is discouraged and will be removed in upcoming major release. Please refer to https://github.com/moment/moment/issues/1407 for more info.'
+<br />PhantomJS 1.9.8 (Mac OS X) WARN: 'Deprecation warning: moment construction falls back to js Date. This is discouraged and will be removed in upcoming major release. Please refer to https://github.com/moment/moment/issues/1407 for more info.'
+<br />PhantomJS 1.9.8 (Mac OS X) WARN: 'Deprecation warning: moment construction falls back to js Date. This is discouraged and will be removed in upcoming major release. Please refer to https://github.com/moment/moment/issues/1407 for more info.'
+</td>
       </tr>
     </table>
     <hr/>

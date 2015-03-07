@@ -137,8 +137,12 @@ input[type="password"].normal-input {
   font-weight: bold !important;
   letter-spacing: 1.15px;
 }
-
 /* line 72, ../sass/_form.sass */
+.text-wrap button .btn-primary {
+  width: 100%;
+}
+
+/* line 75, ../sass/_form.sass */
 .select-wrap {
   height: 40px;
   width: 100%;
@@ -153,7 +157,7 @@ input[type="password"].normal-input {
   margin-top: 20px;
   line-height: 40px;
 }
-/* line 86, ../sass/_form.sass */
+/* line 89, ../sass/_form.sass */
 .select-wrap select {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -171,7 +175,7 @@ input[type="password"].normal-input {
   outline: none;
 }
 
-/* line 102, ../sass/_form.sass */
+/* line 105, ../sass/_form.sass */
 .round-btn {
   width: 64px;
   height: 64px;
@@ -181,11 +185,11 @@ input[type="password"].normal-input {
   border-radius: 50%;
   cursor: pointer;
 }
-/* line 111, ../sass/_form.sass */
+/* line 114, ../sass/_form.sass */
 .round-btn:hover, .round-btn:active {
   background: #006199;
 }
-/* line 115, ../sass/_form.sass */
+/* line 118, ../sass/_form.sass */
 .round-btn i {
   font-size: 25px;
   line-height: 64px;

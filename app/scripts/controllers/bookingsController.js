@@ -63,6 +63,7 @@ angular.module('controllers')
 				});
 
 				$scope.allBookings.push($scope.booking); //Update allBookings list
+				$scope.sortBookings();
 			});
 		}
 	};
@@ -95,12 +96,17 @@ angular.module('controllers')
 				$scope.allBookings = _.sortBy($scope.allBookings, function(p){
           return -p.capacity;
         });
-        console.log($scope.allBookings);
 				break;
 			case 'Source':
 				$scope.allBookings = _.sortBy($scope.allBookings, function(p){
           return p.source;
         });
+				break;
+			case 'Datetime':
+				$scope.allBookings = _.sortBy($scope.allBookings, function(p){
+          return -moment(p.date + ' ' + p.time);
+        });
+				break;
 				break;
 			case 'Destination':
 				$scope.allBookings = _.sortBy($scope.allBookings, function(p){

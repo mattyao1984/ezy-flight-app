@@ -9,6 +9,7 @@ angular.module('controllers')
 	$scope.bookingForm = {};
 
 	$scope.submitted = false;
+	$scope.filter = 'all';
 
 	//Get and set config settings 
 	dataService.getServerConfig().then(function(server_res){
@@ -85,6 +86,27 @@ angular.module('controllers')
 				//remove the booking from the list
 				$scope.allBookings = _.without($scope.allBookings, _.findWhere($scope.allBookings, {objectId: objectId}));
 			});
+		}
+	};
+
+	$scope.sortBookings = function(){
+		switch($scope.filter){
+			case 'Capacity':
+				$scope.allBookings = _.sortBy($scope.allBookings, function(p){
+          return -p.capacity;
+        });
+        console.log($scope.allBookings);
+				break;
+			case 'Source':
+				$scope.allBookings = _.sortBy($scope.allBookings, function(p){
+          return p.source;
+        });
+				break;
+			case 'Destination':
+				$scope.allBookings = _.sortBy($scope.allBookings, function(p){
+          return p.destination;
+        });
+				break;
 		}
 	};
 }]);

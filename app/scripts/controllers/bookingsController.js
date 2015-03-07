@@ -4,15 +4,13 @@ angular.module('controllers')
 .controller('bookingsController', ['$rootScope', '$scope', '$route', '$location', 'dataService', function($rootScope, $scope, $route, $location, dataService) {
 	$scope.userId = $route.current.params.userId;
 	$scope.showModal = false;
+	$scope.dataReady = false;
 	$scope.allBookings = [];
 
 	//Get and set config settings 
 	dataService.getServerConfig().then(function(server_res){
 		dataService.setConfig(server_res.data);
-
-		dataService.getMyBookings($scope.userId).then(function(bookingsRes){
-			$scope.allBookings = bookingsRes.data.results;
-		});
+		$scope.syncData();
 	});
 
 	$scope.addFlight = function(){
@@ -22,6 +20,18 @@ angular.module('controllers')
 
 	$scope.cancelBooking = function(){
 		$scope.showModal = false;
+	};
+
+	$scope.logout = function(){
+
+	};
+
+	$scope.syncData = function(){
+		$scope.dataReady = false;
+		dataService.getMyBookings($scope.userId).then(function(bookingsRes){
+			$scope.allBookings = bookingsRes.data.results;
+			$scope.dataReady = true;
+		});
 	};
 
 	$scope.saveBooking = function(){

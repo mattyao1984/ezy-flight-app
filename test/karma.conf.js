@@ -33,8 +33,12 @@ module.exports = function(config) {
       'bower_components/angular-native-picker/build/angular-datepicker.js',
       'bower_components/angular-mocks/angular-mocks.js',
       // endbower
-      'app/scripts/**/*.js',
-      'test/mock/**/*.js',
+      'app/scripts/controllers/homeController.js',
+      'app/scripts/controllers/bookingsController.js',
+      'app/scripts/directives/*.js',
+      'app/scripts/services/dataService.js',
+      'app/scripts/services/authService.js',
+      'app/scripts/app.js',
       'test/spec/**/*.js'
     ],
 
@@ -60,8 +64,15 @@ module.exports = function(config) {
     // Which plugins to enable
     plugins: [
       'karma-phantomjs-launcher',
-      'karma-jasmine'
+      'karma-jasmine',
+      'karma-htmlfile-reporter'
     ],
+
+    reporters: ['progress', 'html'],
+
+    htmlReporter: {
+      outputFile: 'test/units.html'
+    },
 
     // Continuous Integration mode
     // if true, it capture browsers, run tests and exit
